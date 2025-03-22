@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Coding test 1</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>
+            $(document).ready(function() {
+                $('figcaption p').hide();
+
+
+                $('figure').mouseenter(function (){
+                    $(this).find('figcaption p').stop().slideDown(300);
+                });
+
+                $('figure').mouseleave(function (){
+                    $(this).find('figcaption p').stop().slideUp(300);
+                });
+        });
+    </script>
+</head>
+
+<body>
+<div class="superheroes">
+    <figure>
+        <img src="images/batman.jpg" alt="Batman">
+        <figcaption>
+            <p>Batman</p>
+            <img src="images/batman_symbol.png" alt="Batman Badge">
+        </figcaption>
+    </figure>
+
+    <figure>
+        <img src="images/robin.jpg" alt="Robin">
+        <figcaption>
+            <p>Robin</p>
+            <img src="images/robin_symbol.png" alt="Robin Badge">
+        </figcaption>
+    </figure>
+
+    <figure>
+        <img src="images/superman.jpg" alt="Superman">
+        <figcaption>
+            <p>Superman</p>
+            <img src="images/superman_symbol.png" alt="Superman Badge">
+        </figcaption>
+    </figure>
+
+    <figure>
+        <img src="images/wonderwoman.jpg" alt="Wonder Woman">
+        <figcaption>
+            <p>Wonderwoman</p>
+            <img src="images/wonderwoman_symbol.png" alt="Wonder Woman Badge">
+        </figcaption>
+    </figure>
+</div>
+</body>
+</html>

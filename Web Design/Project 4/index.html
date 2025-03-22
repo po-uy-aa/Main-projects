@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Coding test 2</title>
+  <link rel="stylesheet" href="Styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script>
+    $(document).ready(function() {
+      const video = $('video').get(0);
+
+      // When video starts
+      $('video').on('timeupdate', function() {
+        let playTime = Math.round($(this).get(0).currentTime);
+        $('p').hide();
+
+        if (playTime >= 1 && playTime < 5) {
+          $('#txt1').show();
+        } else if (playTime >= 5 && playTime < 12) {
+          $('#txt2').show();
+        } else if (playTime >= 12 && playTime < 20) {
+          $('#txt3').show();
+        } else if (playTime >= 20 && playTime < 30) {
+          $('#txt4').show();
+        } else if (playTime >= 30) {
+          $('#txt5').show();
+        }
+      });
+
+      // When press backward button
+      $('#backward').click(function() {
+        video.currentTime -= 5;
+
+        let playTime = Math.round($(this).get(0).currentTime);
+        $('p').hide();
+
+        if (playTime >= 1 && playTime < 5) {
+          $('#txt1').show();
+        } else if (playTime >= 5 && playTime < 12) {
+          $('#txt2').show();
+        } else if (playTime >= 12 && playTime < 20) {
+          $('#txt3').show();
+        } else if (playTime >= 20 && playTime < 30) {
+          $('#txt4').show();
+        } else if (playTime >= 30) {
+          $('#txt5').show();
+        }
+      });
+
+      // When press forward button
+      $('#forward').click(function() {
+        video.currentTime += 5;
+
+        let playTime = Math.round($(this).get(0).currentTime);
+        $('p').hide();
+
+        if (playTime >= 1 && playTime < 5) {
+          $('#txt1').show();
+        } else if (playTime >= 5 && playTime < 12) {
+          $('#txt2').show();
+        } else if (playTime >= 12 && playTime < 20) {
+          $('#txt3').show();
+        } else if (playTime >= 20 && playTime < 30) {
+          $('#txt4').show();
+        } else if (playTime >= 30) {
+          $('#txt5').show();
+        }
+      });
+
+      // When press play/pause button
+      $('#playPause').click(function() {
+        if (video.paused) {
+          video.play();
+          $(this).text('Pause');
+        } else {
+          video.pause();
+          $(this).text('Play');
+        }
+      });
+
+      // When video ends
+      $('video').on('ended', function() {
+        video.pause();
+        video.currentTime = 0;
+        $('#playPause').text('Play');
+        $('p').hide();
+        $('#txt1').show();
+      });
+
+    });
+  </script>
+</head>
+
+<body>
+
+<div class="videoWrapper">
+  <video id="hermitVideo">
+    <source src="https://mmcc.mq.edu.au/mmcc2041/resources/ct2/hermit-crab.mp4">
+  </video>
+
+  <div class="controls">
+    <button id="backward">-5S</button>
+    <button id="playPause">Play</button>
+    <button id="forward">+5S</button>
+  </div>
+
+  <p id="txt1">Hermit Crabs.</p>
+
+  <p id="txt2">Hermit crabs are decapod crustaceans of the superfamily Paguroidea.
+    Most of the approximately 1,110 species possess an asymmetric abdomen concealed in a scavenged mollusc shell.</p>
+
+  <p id="txt3">As hermit crabs grow, they require larger shells.
+    Since suitable intact gastropod shells are sometimes a limited resource,
+    vigorous competition often occurs among hermit crabs for shells.</p>
+
+  <p id="txt4">Hermit crabs with too-small shells cannot grow as fast as those with well-fitting shells,
+    and are more likely to be eaten if they cannot retract completely into the shell.
+    Therefore, as the hermit crab grows in size, it must find a larger shell and abandon the previous one.</p>
+
+  <p id="txt5">You can read more about hermit crabs on
+    <a href="https://en.wikipedia.org/wiki/Hermit_crab" target="_blank">Wikipedia</a>.</p>
+
+</div>
+</body>
+</html>

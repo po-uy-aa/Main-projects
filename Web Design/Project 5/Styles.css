@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Josefin+Sans');
+
+/* Keyframes */
+@keyframes photoHover {
+    0% { transform: scale(1) rotate(0deg); filter: brightness(100%); }
+    50% { transform: scale(1.1) rotate(10deg); filter: brightness(120%); }
+    100% { transform: scale(1) rotate(0deg); filter: brightness(100%); }
+}
+
+@keyframes videoHover {
+    0% { transform: scale(1); filter: brightness(100%); }
+    50% { transform: scale(1.1); filter: brightness(130%); border-radius: 20%; }
+    100% { transform: scale(1); filter: brightness(100%);border-radius: 10px; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { left: -110px; }
+    to { left: 0; }
+}
+
+@keyframes bounceIn {
+    0% { transform: scale(0.1); opacity: 0; }
+    60% { transform: scale(1.2); opacity: 1; }
+    100% { transform: scale(1); }
+}
+
+/* General Styles */
+body {
+    background-color: #f6f9f4;
+    color: #333;
+    margin: 0;
+    font-family: 'Inconsolata', sans-serif;
+}
+
+#wrapper-intro, #wrapper1, #wrapper2, #wrapper3, #mapWrapper, #wrapper-conclusion {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 50px 0;
+    background: #222;
+    color: #fff;
+    animation: fadeIn 2s ease;
+}
+
+header h1 ,h1 {
+    font-size: 60px;
+    font-family: 'Special Elite', cursive;
+    letter-spacing: 2px;
+}
+
+/* Navigation */
+nav {
+    position: fixed;
+    background-color: #4776ec;
+    color: #fff;
+    width: 110px;
+    top: 215px;
+    left: 0;
+    padding-right: 15px;
+    border-radius: 10px;
+    transition: left 0.5s ease;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #fff;
+    color: #ffcc00;
+    border-radius: 10px;
+    width: 105px;
+}
+
+nav.position {
+    left: -110px;
+}
+
+nav.position:hover {
+    animation: slideIn 0.5s forwards;
+}
+
+/* Section Styling */
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation: bounceIn 1s ease;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.introduction-section { background-color: #df8c4e; }
+.iphone-section { background-color: #d85dc3; }
+.ipad-section { background-color: #f6f261; }
+.macbook-section { background-color: #d84a84; }
+.conclusion-section { background-color: #8fc858; }
+.map-section {background-color: #b6a14b;}
+
+/* Product Info */
+.product-info {
+    font-size: 22px;
+    line-height: 1.6;
+    padding: 10px;
+    background: #e2e2e2;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+    color: #222;
+    font-family: "Josefin Sans", cursive;
+}
+
+.product-info:hover {
+    transform: scale(1.05);
+}
+
+/* Figure and Image */
+figure {
+    position: relative;
+    margin: 20px 0;
+}
+
+figcaption p {
+    font-size: 16px;
+    color: white;
+    position: absolute;
+    bottom: 3px;
+    width: 480px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    margin: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* Modal Styling */
+#modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+}
+
+#overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.imgHolder {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.imgHolder img {
+    width: 800px;
+    height: 650px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.imgHolder p {
+    width: 780px;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    margin: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* Responsive Images */
+.responsive {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.5s ease, filter 0.5s ease;
+    cursor: pointer;
+}
+
+.responsive:hover {
+    animation: photoHover 1s ease-in-out forwards;
+}
+
+/* Video */
+video {
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+video:hover {
+    animation: videoHover 1s ease-in-out forwards;
+}
+
+/* Map */
+.map-container {
+    width: 100%;
+    max-width: 1000px;
+    height: 500px;
+    border-radius: 10px;
+    border: 5px solid #333;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}

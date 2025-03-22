@@ -1,0 +1,47 @@
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.superheroes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 40px;
+}
+
+figure {
+    position: relative;
+    margin: 20px ;
+}
+
+figure img {
+    width: 576px;
+    height: 365px;
+    position: relative;
+    z-index:1;
+}
+
+figcaption p {
+    font-size: 24px;
+    color: white;
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 20px;
+    margin: 0;
+    z-index: 2;
+    box-sizing: border-box;
+}
+figcaption img{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: auto;
+    height: auto;
+    z-index: 3;
+}
