@@ -1,0 +1,11 @@
+C:\C#Stage2Sem12023\SampleWindowsForm\SampleWindowsForm\bin\Debug\SampleWindowsForm.exe.config
+C:\C#Stage2Sem12023\SampleWindowsForm\SampleWindowsForm\bin\Debug\SampleWindowsForm.exe
+C:\C#Stage2Sem12023\SampleWindowsForm\SampleWindowsForm\bin\Debug\SampleWindowsForm.pdb
+C:\C#Stage2Sem12023\SampleWindowsForm\SampleWindowsForm\obj\Debug\SampleWindowsForm.csproj.AssemblyReference.cache
+C:\C#Stage2Sem12023\SampleWindowsForm\SampleWindowsForm\obj\Debug\SampleWindowsForm.csproj.SuggestedBindingRedirects.cache
+C:\C#Stage2Sem12023\SampleWindowsForm\SampleWindowsForm\obj\Debug\SampleWindowsForm.Properties.Resources.resources
+C:\C#Stage2Sem12023\SampleWindowsForm\SampleWindowsForm\obj\Debug\SampleWindowsForm.csproj.GenerateResource.cache
+C:\C#Stage2Sem12023\SampleWindowsForm\SampleWindowsForm\obj\Debug\SampleWindowsForm.csproj.CoreCompileInputs.cache
+C:\C#Stage2Sem12023\SampleWindowsForm\SampleWindowsForm\obj\Debug\SampleWindowsForm.exe
+C:\C#Stage2Sem12023\SampleWindowsForm\SampleWindowsForm\obj\Debug\SampleWindowsForm.pdb
+C:\C#Stage2Sem12023\SampleWindowsForm\SampleWindowsForm\obj\Debug\SampleWindowsForm.Form1.resources

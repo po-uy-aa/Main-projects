@@ -1,0 +1,11 @@
+C:\C#Stage2Sem12023\StudentGradeCalculator\StudentGradeCalculator\bin\Debug\StudentGradeCalculator.exe.config
+C:\C#Stage2Sem12023\StudentGradeCalculator\StudentGradeCalculator\bin\Debug\StudentGradeCalculator.exe
+C:\C#Stage2Sem12023\StudentGradeCalculator\StudentGradeCalculator\bin\Debug\StudentGradeCalculator.pdb
+C:\C#Stage2Sem12023\StudentGradeCalculator\StudentGradeCalculator\obj\Debug\StudentGradeCalculator.csproj.AssemblyReference.cache
+C:\C#Stage2Sem12023\StudentGradeCalculator\StudentGradeCalculator\obj\Debug\StudentGradeCalculator.csproj.SuggestedBindingRedirects.cache
+C:\C#Stage2Sem12023\StudentGradeCalculator\StudentGradeCalculator\obj\Debug\StudentGradeCalculator.Form1.resources
+C:\C#Stage2Sem12023\StudentGradeCalculator\StudentGradeCalculator\obj\Debug\StudentGradeCalculator.Properties.Resources.resources
+C:\C#Stage2Sem12023\StudentGradeCalculator\StudentGradeCalculator\obj\Debug\StudentGradeCalculator.csproj.GenerateResource.cache
+C:\C#Stage2Sem12023\StudentGradeCalculator\StudentGradeCalculator\obj\Debug\StudentGradeCalculator.csproj.CoreCompileInputs.cache
+C:\C#Stage2Sem12023\StudentGradeCalculator\StudentGradeCalculator\obj\Debug\StudentGradeCalculator.exe
+C:\C#Stage2Sem12023\StudentGradeCalculator\StudentGradeCalculator\obj\Debug\StudentGradeCalculator.pdb

@@ -1,0 +1,8 @@
+C:\Users\lkolla\C#Stage1Sem22022\DictionaryExample\DictionaryExample\bin\Debug\DictionaryExample.exe.config
+C:\Users\lkolla\C#Stage1Sem22022\DictionaryExample\DictionaryExample\bin\Debug\DictionaryExample.exe
+C:\Users\lkolla\C#Stage1Sem22022\DictionaryExample\DictionaryExample\bin\Debug\DictionaryExample.pdb
+C:\Users\lkolla\C#Stage1Sem22022\DictionaryExample\DictionaryExample\obj\Debug\DictionaryExample.csproj.AssemblyReference.cache
+C:\Users\lkolla\C#Stage1Sem22022\DictionaryExample\DictionaryExample\obj\Debug\DictionaryExample.csproj.SuggestedBindingRedirects.cache
+C:\Users\lkolla\C#Stage1Sem22022\DictionaryExample\DictionaryExample\obj\Debug\DictionaryExample.csproj.CoreCompileInputs.cache
+C:\Users\lkolla\C#Stage1Sem22022\DictionaryExample\DictionaryExample\obj\Debug\DictionaryExample.exe
+C:\Users\lkolla\C#Stage1Sem22022\DictionaryExample\DictionaryExample\obj\Debug\DictionaryExample.pdb
