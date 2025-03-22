@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Suburbs</h1>
+    
+    <form>
+        <h2>Save suburbs</h2>
+        <p>
+            <label for="name">Name: </label>
+            <input type="text" id="name">
+        </p>
+
+        <p>
+            <label for="postcode">Postcode:</label>
+            <input type="number" id="postcode">
+            <button type="button" id="save">Save</button>
+        </p>
+
+        <h2>Remove suburb</h2>
+        <p>
+            <label for="removeByName">Remove suburb:</label>
+            <input type="text" id="removeByName">
+            <button type="button" id="remove">Remove</button>
+        </p>
+    </form>
+
+    <div id="content"></div>
+
+    <script src="scripts/taskOne.js"></script>
+</body>
+</html>
