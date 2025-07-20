@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quote of the Day</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  
+  <h2>Quote of the Day</h2>
+
+  <!-- Task 1: Add an aria-live region here -->
+  <!-- Example: <div id="quoteStatus" aria-live="polite"></div> -->
+  <!-- In index.html, add the aria-live region below the h2 -->
+
+  <div id="quoteStatus" aria-live="polite" class="sr-status"></div>
+  <button id="get-quote">Get Quote</button>
+  <button id="clear-quote">Clear</button>
+
+
+  <!-- Task 4: Convert this into a listbox later if needed -->
+  <p id="quote-output">Click the button to load a quote. </p>
+  <!-- Replace the paragraph output with a listbox -->
+  <div id="quote-listbox"
+       role="listbox"
+       aria-label="Saved quotes"
+       class="quote-listbox">
+    <!-- Quote options will be added here dynamically -->
+  </div>
+
+
+  <!-- Task 3: Add your modal markup here -->
+  <!-- Example: <div id="modal" role="dialog" hidden>...</div> -->
+  <!-- Modal dialog -->
+  <div id="quoteInfoModal" class="modal" role="dialog" aria-labelledby="modalTitle" aria-modal="true" hidden>
+    <div class="modal-content">
+      <h2 id="modalTitle">About Quote of the Day</h2>
+      <div class="modal-body">
+        <p>This application fetches random quotes from the Quotable API. You can get a new quote, refresh the current one, or clear the display.</p>
+        <p>All features are fully accessible via keyboard and screen readers.</p>
+      </div>
+      <div class="modal-footer">
+        <button id="closeModal" aria-label="Close modal">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add info button to trigger the modal -->
+  <button id="infoButton" aria-label="Information about this application">Info</button>
+
+
+
+  <!-- Task 2: Add your custom keyboard-accessible button here -->
+  <!-- Example: <div id="refreshBtn" role="button" ...> -->
+
+  <!-- Add the custom button after the clear button -->
+  <div id="refreshBtn"
+       role="button"
+       tabindex="0"
+       aria-label="Refresh quote"
+       class="custom-button">
+    Refresh Quote
+  </div>
+        
+</body>
+</html>

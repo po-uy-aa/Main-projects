@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Password Demo</title> 
+        <script src="js/script.js" defer type="module"></script>
+    </head>
+    <body>
+        <h1>Password Demo</h1>
+        <div class="container">
+
+            <p>This app implements password checking and storage
+                using PBKDF2.   The two forms below allow you to
+                register a username and password, and login with
+                existing credentials.</p>
+
+            <p>The user list shows the currently registered
+                users along with their hashed passwords and salt.
+            </p>
+            <p>The app does not use cookies, so login is not persistent.  When you
+                refresh the page, it will forget about your login.
+            </p>
+
+            <login-form></login-form>
+
+            <registration-form></registration-form>
+
+            <user-list></user-list>
+        </div>
+    </body>
+</html>

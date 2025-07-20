@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Pouya's web page</h1>
+        <p id="intro">Hello, I am Mohammadpouya, a student at Macquarie University.</p>
+        <button id="toggle-mode">Toggle Light/Dark Mode</button>
+        <button id="swap">Swap images</button>
+    </header>
+
+    <div class="container">
+        <section id="units-completed">
+            <h2>Units Completed at MQ</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Unit Code</th>
+                        <th>Unit Name</th>
+                        <th>Year</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>MMCC2041</td>
+                        <td>Interactive Web Design</td>
+                        <td>2024</td>
+                    </tr>
+                    <tr>
+                        <td>COMP2200/ COMP6200</td>
+                        <td>Data Science</td>
+                        <td>2024</td>
+                    </tr>
+                    <tr>
+                        <td>COMP2050</td>
+                        <td>Software Engineering</td>
+                        <td>2024</td>
+                    </tr>
+                    <tr>
+                        <td>COMP2759/ COMP6750</td>
+                        <td>Application Development</td>
+                        <td>2024</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="images">
+            <h2>Image Gallery</h2>
+            <figure>
+                <img id="first-image" src="picture.jpg" class="media" alt="Local Image">
+                <figcaption>Nature</figcaption>
+            </figure>
+            <figure>
+                <img id="second-image" src="https://images.unsplash.com/photo-1738253145888-e8f1e20ab05b" class="media" alt="External Image">
+                <figcaption>Snow</figcaption>
+            </figure>
+        </section>
+
+        <section id="video">
+            <h2>Video</h2>
+            <video controls class="media">
+                <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm" type="video/webm">
+            </video>
+            <video controls class="media" style="margin-top: 30px;">
+                 <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            </video>
+        </section>
+    </div>
+
+    <footer>
+        <p> &copy; 2025 Mohammadpouya Alavi Naeini. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

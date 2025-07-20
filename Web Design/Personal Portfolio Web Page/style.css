@@ -1,0 +1,83 @@
+body {
+    font-family: Georgia, serif;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 38px;
+    text-align: left;
+}
+
+.media {
+    width: 500px;
+    height: 250px;
+    margin-left: 20px;
+}
+
+#intro {
+    font-style: italic;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+figcaption {
+    font-size: 0.8em;
+    margin-left: 20px;
+}
+
+h2 {
+    color: #ff0000;
+    text-align: center;
+}
+
+footer {
+    width: 50%;
+    height: auto;
+    text-align: center;
+    padding: 10px;
+    background: aqua;
+    color: black;
+    font-size: 0.8em;
+    font-weight: bold;
+    font-style: italic;
+    border-radius: 12px;
+    box-shadow: 0 0 5px #000;
+    margin: 100px auto;
+    border: 1px solid white;
+}
+
+button {
+    background-color: #4CAF50;
+    border: 1px solid white;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.dark-mode, .dark-mode footer {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.dark-mode th, .dark-mode td {
+    border: 1px solid white;
+}

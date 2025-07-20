@@ -1,0 +1,45 @@
+body {
+    background-color: rgba(129, 0, 128, 0.71);
+    color: #f6f9f4;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+p {
+    font-size: 30px;
+}
+
+#actions {
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    grid-template-rows: repeat(2, 100px);
+    gap: 10px;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+
+#actions li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    border: 2px solid #ccc;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: red;
+}
